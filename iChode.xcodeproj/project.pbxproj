@@ -15,6 +15,7 @@
 		42242DDF1AE6CC1B00DFCA39 /* iChodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42242DDE1AE6CC1B00DFCA39 /* iChodeTests.swift */; };
 		427C35DC1AF0081D00E5020C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C35DB1AF0081D00E5020C /* ViewController2.swift */; };
 		427C35DE1AF00E3600E5020C /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C35DD1AF00E3600E5020C /* ViewController3.swift */; };
+		FEE6B0854CC1DBF573D84DA3 /* libPods-iChode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A28DBA2CF30DF76D6EF4E5F /* libPods-iChode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		427C35DD1AF00E3600E5020C /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		43F236E1450998B92A6561F8 /* Pods-iChode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iChode.release.xcconfig"; path = "Pods/Target Support Files/Pods-iChode/Pods-iChode.release.xcconfig"; sourceTree = "<group>"; };
 		5150282992AC3BCBA01B0F1C /* Pods-iChode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iChode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iChode/Pods-iChode.debug.xcconfig"; sourceTree = "<group>"; };
+		E296B8181AF7E001005DC5EB /* iLift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iLift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE6B0854CC1DBF573D84DA3 /* libPods-iChode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 		42242DBA1AE6CC1B00DFCA39 = {
 			isa = PBXGroup;
 			children = (
+				E296B8181AF7E001005DC5EB /* iLift-Bridging-Header.h */,
 				42242DC51AE6CC1B00DFCA39 /* iChode */,
 				42242DDB1AE6CC1B00DFCA39 /* iChodeTests */,
 				42242DC41AE6CC1B00DFCA39 /* Products */,
@@ -194,6 +198,7 @@
 					};
 					42242DD71AE6CC1B00DFCA39 = {
 						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 42242DC21AE6CC1B00DFCA39;
 					};
 				};
 			};
@@ -408,7 +413,7 @@
 				INFOPLIST_FILE = iChode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iLift/iLift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -420,13 +425,14 @@
 				INFOPLIST_FILE = iChode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iLift/iLift-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		42242DE61AE6CC1B00DFCA39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -438,13 +444,14 @@
 				INFOPLIST_FILE = iChodeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iChode.app/iChode";
 			};
 			name = Debug;
 		};
 		42242DE71AE6CC1B00DFCA39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -452,7 +459,7 @@
 				INFOPLIST_FILE = iChodeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iChode.app/iChode";
 			};
 			name = Release;
 		};

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "890DFE2B6A97DBB09CCFC46F"
+               BlueprintIdentifier = "3B590307C0364DC981607A46"
                BuildableName = "libPods-iChode-CorePlot.a"
                BlueprintName = "Pods-iChode-CorePlot"
                ReferencedContainer = "container:Pods.xcodeproj">
