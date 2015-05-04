@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,19 +20,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arnold" translatesAutoresizingMaskIntoConstraints="NO" id="Vt5-HY-QKV">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I6j-oN-969">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="30"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="iChode" id="STr-Iv-5ja"/>
-                                </items>
-                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoP-vF-Jrc">
                                 <rect key="frame" x="16" y="275" width="125" height="82"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -53,8 +41,29 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6j-oN-969">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Hpk-6c-eTW"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="30"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="iLift" id="STr-Iv-5ja"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="I6j-oN-969" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="B5e-2Q-4IO"/>
+                            <constraint firstItem="I6j-oN-969" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="SJL-hd-KT4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I6j-oN-969" secondAttribute="trailing" constant="-16" id="hAO-nM-13a"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -73,7 +82,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="v1T-8S-mSD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="v1T-8S-mSD">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -93,8 +102,11 @@
                                     <outlet property="delegate" destination="Ks8-Iw-lY2" id="hWT-jY-y8d"/>
                                 </connections>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k6n-ZG-2yD">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6n-ZG-2yD">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="d7x-Es-Ws8"/>
+                                </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
@@ -103,11 +115,20 @@
                                     <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="iChode" id="Upq-Mn-0pa"/>
+                                    <navigationItem title="iLift" id="Upq-Mn-0pa"/>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v1T-8S-mSD" firstAttribute="leading" secondItem="32a-dN-MUI" secondAttribute="leadingMargin" constant="-16" id="7UR-dJ-KE9"/>
+                            <constraint firstItem="k6n-ZG-2yD" firstAttribute="top" secondItem="rhB-wr-c1Q" secondAttribute="bottom" id="IOX-Sn-d7w"/>
+                            <constraint firstItem="k6n-ZG-2yD" firstAttribute="leading" secondItem="32a-dN-MUI" secondAttribute="leadingMargin" constant="-16" id="KHt-42-cr0"/>
+                            <constraint firstItem="Fn8-qA-ael" firstAttribute="top" secondItem="v1T-8S-mSD" secondAttribute="bottom" id="PvL-iZ-iYV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v1T-8S-mSD" secondAttribute="trailing" constant="-16" id="TMD-7g-YWn"/>
+                            <constraint firstItem="v1T-8S-mSD" firstAttribute="top" secondItem="k6n-ZG-2yD" secondAttribute="bottom" id="ZmG-NC-eJ5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k6n-ZG-2yD" secondAttribute="trailing" constant="-16" id="xmD-bb-coE"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -127,7 +148,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KQz-FE-93U">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KQz-FE-93U">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -144,8 +165,11 @@
                                     <outlet property="delegate" destination="o6R-Qd-qPZ" id="fIP-2l-0ov"/>
                                 </connections>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csD-wB-Uw7">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csD-wB-Uw7">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3zm-1I-ESi"/>
+                                </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
@@ -154,11 +178,20 @@
                                     <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="iChode" id="ScL-rd-KtP"/>
+                                    <navigationItem title="iLift" id="ScL-rd-KtP"/>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KQz-FE-93U" firstAttribute="top" secondItem="csD-wB-Uw7" secondAttribute="bottom" id="0Ab-FL-ayd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="csD-wB-Uw7" secondAttribute="trailing" constant="-16" id="8Eb-8A-2jL"/>
+                            <constraint firstItem="od8-tQ-Xbc" firstAttribute="top" secondItem="KQz-FE-93U" secondAttribute="bottom" id="MH1-VF-08E"/>
+                            <constraint firstItem="csD-wB-Uw7" firstAttribute="top" secondItem="hyF-6a-NeN" secondAttribute="bottom" id="UOL-4n-guf"/>
+                            <constraint firstItem="csD-wB-Uw7" firstAttribute="leading" secondItem="IYk-3Q-sWa" secondAttribute="leadingMargin" constant="-16" id="eDs-2H-P2D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KQz-FE-93U" secondAttribute="trailing" constant="-16" id="vys-TN-8d9"/>
+                            <constraint firstItem="KQz-FE-93U" firstAttribute="leading" secondItem="IYk-3Q-sWa" secondAttribute="leadingMargin" constant="-16" id="xBR-Eg-JKk"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
