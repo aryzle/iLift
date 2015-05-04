@@ -15,7 +15,6 @@
 		42242DDF1AE6CC1B00DFCA39 /* iChodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42242DDE1AE6CC1B00DFCA39 /* iChodeTests.swift */; };
 		427C35DC1AF0081D00E5020C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C35DB1AF0081D00E5020C /* ViewController2.swift */; };
 		427C35DE1AF00E3600E5020C /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C35DD1AF00E3600E5020C /* ViewController3.swift */; };
-		FEE6B0854CC1DBF573D84DA3 /* libPods-iChode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A28DBA2CF30DF76D6EF4E5F /* libPods-iChode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A28DBA2CF30DF76D6EF4E5F /* libPods-iChode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iChode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42242DC31AE6CC1B00DFCA39 /* iChode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42242DC71AE6CC1B00DFCA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42242DC81AE6CC1B00DFCA39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,9 +40,6 @@
 		42242DDE1AE6CC1B00DFCA39 /* iChodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChodeTests.swift; sourceTree = "<group>"; };
 		427C35DB1AF0081D00E5020C /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		427C35DD1AF00E3600E5020C /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
-		43F236E1450998B92A6561F8 /* Pods-iChode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iChode.release.xcconfig"; path = "Pods/Target Support Files/Pods-iChode/Pods-iChode.release.xcconfig"; sourceTree = "<group>"; };
-		5150282992AC3BCBA01B0F1C /* Pods-iChode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iChode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iChode/Pods-iChode.debug.xcconfig"; sourceTree = "<group>"; };
-		E296B8181AF7E001005DC5EB /* iLift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iLift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEE6B0854CC1DBF573D84DA3 /* libPods-iChode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +63,9 @@
 		42242DBA1AE6CC1B00DFCA39 = {
 			isa = PBXGroup;
 			children = (
-				E296B8181AF7E001005DC5EB /* iLift-Bridging-Header.h */,
 				42242DC51AE6CC1B00DFCA39 /* iChode */,
 				42242DDB1AE6CC1B00DFCA39 /* iChodeTests */,
 				42242DC41AE6CC1B00DFCA39 /* Products */,
-				7A2D57975922614A05DDA2BA /* Pods */,
-				82BEB321D4EF2A416D85B32F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,23 +118,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7A2D57975922614A05DDA2BA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5150282992AC3BCBA01B0F1C /* Pods-iChode.debug.xcconfig */,
-				43F236E1450998B92A6561F8 /* Pods-iChode.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		82BEB321D4EF2A416D85B32F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2A28DBA2CF30DF76D6EF4E5F /* libPods-iChode.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,11 +125,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42242DE21AE6CC1B00DFCA39 /* Build configuration list for PBXNativeTarget "iChode" */;
 			buildPhases = (
-				58B01A6709923F18F1FF2D2E /* Check Pods Manifest.lock */,
 				42242DBF1AE6CC1B00DFCA39 /* Sources */,
 				42242DC01AE6CC1B00DFCA39 /* Frameworks */,
 				42242DC11AE6CC1B00DFCA39 /* Resources */,
-				4DD1D54B6F45032B384103C5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,39 +212,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4DD1D54B6F45032B384103C5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iChode/Pods-iChode-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		58B01A6709923F18F1FF2D2E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42242DBF1AE6CC1B00DFCA39 /* Sources */ = {
@@ -407,25 +346,21 @@
 		};
 		42242DE31AE6CC1B00DFCA39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5150282992AC3BCBA01B0F1C /* Pods-iChode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iChode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "iLift/iLift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		42242DE41AE6CC1B00DFCA39 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43F236E1450998B92A6561F8 /* Pods-iChode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iChode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "iLift/iLift-Bridging-Header.h";
 			};
 			name = Release;
 		};
