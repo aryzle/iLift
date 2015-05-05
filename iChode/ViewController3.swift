@@ -8,18 +8,7 @@
 
 import UIKit
 
-var workoutArray = [
-    ["Bench-Press","Dumbell-Fly","Cable-Fly","Dumbell-Press","Dips","Push-Ups"],
-    
-    ["Wide-Grip-Lat-Pull-Down","Dumbell-Rows","Pull-Ups", "Chin-Ups", "Reverse-Dumbell-Flies"],
-    
-    ["Dumbell-Preacher-Curls", "Dumbell-Hammer-Curls", "Standing-Bar-Curls", "Chin-Ups"],
-    
-    ["Dumbell-Skull-Crushers", "Tricep-Rope", "Dips", "Behind-the-Head-Dumbell-Lifts", "Bench-Press"],
-    
-    ["Arnold-Dumbell-Press", "Military-Press", "Shoulder-Shrugs", "Lateral-Dumbell-Raises", "Dips"],
 
-    ["Squat", "Deadlift", "Leg-Curl", "Calf-Raises", "Leg-Extensions", "Cardio - JK NEVER DO CARDIO"]]
 
 class ViewController3: UIViewController {
     
@@ -42,6 +31,12 @@ class ViewController3: UIViewController {
         
         return cell
         
+    }
+    
+    func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        activeWorkout = indexPath.row
+        self.performSegueWithIdentifier("expandWorkout" , sender: indexPath)
+        return indexPath
     }
     
     override func didReceiveMemoryWarning() {

@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController4: UIViewController {
 
+    @IBOutlet weak var workoutTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        workoutTitle.text = workoutArray[activeMuscle][activeWorkout]
     }
 
     override func didReceiveMemoryWarning() {

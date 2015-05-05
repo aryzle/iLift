@@ -10,7 +10,22 @@ import UIKit
 
 var activeMuscle = -1
 
+var activeWorkout = -1
+
 var cellContent = ["Chest", "Back", "Bi's", "Tri's", "Shoulders", "Legs"]
+
+var workoutArray = [
+    ["Bench-Press","Dumbell-Fly","Cable-Fly","Dumbell-Press","Dips","Push-Ups"],
+    
+    ["Wide-Grip-Lat-Pull-Down","Dumbell-Rows","Pull-Ups", "Chin-Ups", "Reverse-Dumbell-Flies"],
+    
+    ["Dumbell-Preacher-Curls", "Dumbell-Hammer-Curls", "Standing-Bar-Curls", "Chin-Ups"],
+    
+    ["Dumbell-Skull-Crushers", "Tricep-Rope", "Dips", "Behind-the-Head-Dumbell-Lifts", "Bench-Press"],
+    
+    ["Arnold-Dumbell-Press", "Military-Press", "Shoulder-Shrugs", "Lateral-Dumbell-Raises", "Dips"],
+    
+    ["Squat", "Deadlift", "Leg-Curl", "Calf-Raises", "Leg-Extensions", "Cardio - JK NEVER DO CARDIO"]]
 
 class ViewController2: UIViewController {
     
