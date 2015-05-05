@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController5: UIViewController {
 
+    @IBOutlet weak var chartView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

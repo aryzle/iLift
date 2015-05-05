@@ -107,7 +107,7 @@
         <!--View Controller5-->
         <scene sceneID="oXi-Nn-wce">
             <objects>
-                <viewController id="RpZ-cF-FMU" customClass="ViewController5" sceneMemberID="viewController">
+                <viewController id="RpZ-cF-FMU" customClass="ViewController5" customModule="iChode" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cij-PT-Or2"/>
                         <viewControllerLayoutGuide type="bottom" id="yql-6m-Wbb"/>
@@ -140,6 +140,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V82-ay-Q30" customClass="CPTGraphHostingView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="326"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -149,10 +153,13 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="chartView" destination="V82-ay-Q30" id="rxZ-7l-vpU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWH-qp-wNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="546" y="240"/>
+            <point key="canvasLocation" x="741" y="192"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="DNS-HI-k65">
@@ -478,8 +485,8 @@
         <image name="Arnold" width="1280" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EVH-fU-ulS"/>
         <segue reference="wkE-xS-120"/>
+        <segue reference="EVH-fU-ulS"/>
         <segue reference="sda-Au-oCY"/>
     </inferredMetricsTieBreakers>
 </document>
