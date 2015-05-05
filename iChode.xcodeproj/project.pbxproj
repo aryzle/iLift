@@ -15,6 +15,7 @@
 		42242DDF1AE6CC1B00DFCA39 /* iChodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42242DDE1AE6CC1B00DFCA39 /* iChodeTests.swift */; };
 		427C35DC1AF0081D00E5020C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C35DB1AF0081D00E5020C /* ViewController2.swift */; };
 		427C35DE1AF00E3600E5020C /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427C35DD1AF00E3600E5020C /* ViewController3.swift */; };
+		E2395F401AF84A1B00C79D3A /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2395F3F1AF84A1B00C79D3A /* ViewController4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		42242DDE1AE6CC1B00DFCA39 /* iChodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChodeTests.swift; sourceTree = "<group>"; };
 		427C35DB1AF0081D00E5020C /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		427C35DD1AF00E3600E5020C /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		E2395F3F1AF84A1B00C79D3A /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				42242DC81AE6CC1B00DFCA39 /* AppDelegate.swift */,
 				42242DCA1AE6CC1B00DFCA39 /* ViewController.swift */,
 				427C35DB1AF0081D00E5020C /* ViewController2.swift */,
+				E2395F3F1AF84A1B00C79D3A /* ViewController4.swift */,
 				427C35DD1AF00E3600E5020C /* ViewController3.swift */,
 				42242DCC1AE6CC1B00DFCA39 /* Main.storyboard */,
 				42242DCF1AE6CC1B00DFCA39 /* Images.xcassets */,
@@ -222,6 +225,7 @@
 				42242DC91AE6CC1B00DFCA39 /* AppDelegate.swift in Sources */,
 				427C35DE1AF00E3600E5020C /* ViewController3.swift in Sources */,
 				427C35DC1AF0081D00E5020C /* ViewController2.swift in Sources */,
+				E2395F401AF84A1B00C79D3A /* ViewController4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
