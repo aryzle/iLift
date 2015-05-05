@@ -8,9 +8,11 @@
 
 import UIKit
 
+var activeMuscle = -1
+
+var cellContent = ["Chest", "Back", "Bi's", "Tri's", "Shoulders", "Legs"]
+
 class ViewController2: UIViewController {
-   
-    var cellContent = ["Chest", "Back", "Bi's", "Tri's", "Shoulders", "Legs"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,21 @@ class ViewController2: UIViewController {
         return cell
         
     }
+    
+    func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        activeMuscle = indexPath.row
+        self.performSegueWithIdentifier("showWorkouts" , sender: indexPath)
+        return indexPath
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -8,11 +8,32 @@
 
 import UIKit
 
+var workoutArray = [
+    ["Bench-Press","Dumbell-Fly","Cable-Fly","Dumbell-Press","Dips","Push-Ups"],
+    
+    ["Wide-Grip-Lat-Pull-Down","Dumbell-Rows","Pull-Ups", "Chin-Ups", "Reverse-Dumbell-Flies"]]
+
 class ViewController3: UIViewController {
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return workoutArray[activeMuscle].count
+        
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell2")
+        
+        cell.textLabel?.text = workoutArray[activeMuscle][indexPath.row]
+        
+        return cell
+        
     }
     
     override func didReceiveMemoryWarning() {

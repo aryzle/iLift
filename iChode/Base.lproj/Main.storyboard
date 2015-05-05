@@ -93,7 +93,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="o6R-Qd-qPZ" kind="show" id="sda-Au-oCY"/>
+                                            <segue destination="o6R-Qd-qPZ" kind="show" identifier="showWorkouts" id="sda-Au-oCY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -115,7 +115,13 @@
                                     <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="iLift" id="Upq-Mn-0pa"/>
+                                    <navigationItem title="iLift" id="Upq-Mn-0pa">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="stop" id="J8E-Qf-YB2">
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="show" id="JRA-Sj-Dsr"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -130,6 +136,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="k6n-ZG-2yD" secondAttribute="trailing" constant="-16" id="xmD-bb-coE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xmX-gp-TF4"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mqD-85-9G7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -152,7 +159,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Workout" id="hUC-Ex-UeD">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell2" id="hUC-Ex-UeD" customClass="Cell2">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hUC-Ex-UeD" id="PLn-OL-o1y">
@@ -178,7 +185,13 @@
                                     <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="iLift" id="ScL-rd-KtP"/>
+                                    <navigationItem title="iLift" id="ScL-rd-KtP">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="7fO-V1-GEK">
+                                            <connections>
+                                                <segue destination="Ks8-Iw-lY2" kind="show" id="Yde-UT-A31"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -203,4 +216,7 @@
     <resources>
         <image name="Arnold" width="1280" height="800"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Yde-UT-A31"/>
+    </inferredMetricsTieBreakers>
 </document>
